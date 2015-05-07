@@ -67,3 +67,4 @@ def judgeBackdoor(fileCtent):
 		return None
 ```
 
+[插件规则参考](http://www.oschina.net/p/seayfindshell)
