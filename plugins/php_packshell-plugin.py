@@ -9,7 +9,7 @@ rule='gzdeflate|gzcompress|gzencode'
 whitefilter=[]
 
 def  judgeBackdoor(fileCtent):
-	result = re.search(rule, fileCtent):
+	result = re.search(rule, fileCtent)
 	try:
 		if result.group():
 			if '打包' in fileCtent and 'unix2DosTime' in fileCtent:
