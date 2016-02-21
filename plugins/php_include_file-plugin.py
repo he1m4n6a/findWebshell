@@ -26,7 +26,7 @@ def  judgeBackdoor(fileCtent):
 
 		result = re.compile(rule2).findall(fileCtent)
 		if len(result) > 0:
-			valist = ''
+			varlist = ''
 			for group in result:
 				if group[4] in varlist:
 					continue
