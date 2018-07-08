@@ -3,7 +3,7 @@
 
 import re
 
-rule='(include|require)(_once){0,1}[\s*]+[\"|\']+[0-9A-Za-z_]*\:// '
+rule='(include|require)(_once){0,1}[\s*]+[\"|\']+[0-9A-Za-z_]*\://'
 
 def judgeBackdoor(fileCtent):
 	result = re.compile(rule).findall(fileCtent)
