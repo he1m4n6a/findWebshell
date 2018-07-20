@@ -1,7 +1,7 @@
-##工具简介
+## 工具简介
 findWebshell是一款基于python开发的webshell检查工具，可以检查任意类型的webshell后门。
 
-##使用说明
+## 使用说明
     Usage: main.py [options]
 
     Options:
@@ -19,8 +19,8 @@ findWebshell是一款基于python开发的webshell检查工具，可以检查任
     -p 扫描的路径
     -o 生成的html文件名，默认生成report.html
 
-##开发文档
-###字典添加
+## 开发文档
+### 字典添加
 - directory目录下的sensitiveWord.py定义的是后门中的敏感关键字，可以手动添加，格式为{"关键字":"类型"}
 
 ```
@@ -38,7 +38,7 @@ php_webshell = [
 "一句话.php"
 ]
 ```
-###插件开发
+### 插件开发
 - 命令规范
 
 插件命名格式：网页类型_后门类型-plugin.py
