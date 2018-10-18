@@ -16,7 +16,7 @@ def  judgeBackdoor(fileCtent):
 				for var in vararr:
 					if var in group[2]:
 						return "eval|assert后门"
-				resultson = re.search('\\' + group[2] + rule2, filestr)
+				resultson = re.search('\\' + group[2] + rule2, fileCtent)
 				try:
 					if len(resultson.groups()) > 0:
 						return "eval|assert($a)动态eval|assert后门"
