@@ -18,7 +18,7 @@ whitefilter=[
 
 def  judgeBackdoor(fileCtent):
 	result = re.compile(rule1).findall(fileCtent)
-	if len(resullt) > 0:
+	if len(result) > 0:
 		isok = 1
 		for white in whitefilter:
 			if os.path.exists(white[0][0]) and white[1][0] in result[0][0]:
@@ -63,7 +63,7 @@ def  judgeBackdoor(fileCtent):
 					if len(result1.groups()) > 0 and len(result2.groups()) > 0:
 						isok = 1
 						for white in whitefilter:
-							if os.path.exists(white[0][0]) and white[1][0] in result[0]
+                                                    if os.path.exists(white[0][0]) and white[1][0] in result[0]:
 								isok = 0
 						if isok:
 							return '$a($b)动态函数后门'
