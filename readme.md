@@ -1,5 +1,5 @@
 ## 工具简介
-findWebshell是一款基于python开发的webshell检查工具，可以检查任意类型的webshell后门。
+findWebshell是一款基于python开发的webshell检查工具，可以通过配置脚本，方便得检测webshell后门。
 
 ## 使用说明
     Usage: main.py [options]
